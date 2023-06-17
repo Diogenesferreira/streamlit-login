@@ -4,10 +4,10 @@ import time
 from pathlib import Path
 import streamlit as st
 
-# Obter o caminho absoluto da pasta do projeto
-diretorio_projeto = Path.cwd() / 'db'
+# Obter o caminho absoluto do diretório atual
+diretorio_projeto = Path.cwd()
 
-#Crio um banco de dados usando a Classe DataBase
+# Crie um banco de dados usando a Classe DataBase
 banco = DataBase(diretorio_projeto, 'autenticacao.db')
 
 #Função que autentica o usuario usando parametros das classes a baixo
